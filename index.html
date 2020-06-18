@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 	
-	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/controller/HomeCtrl.js"></script>
 	
 	<style>
@@ -22,18 +22,31 @@
 </head>
 <body ng-app="app" ng-controller="HomeCtrl">
 	<div id="backgroundImage">
-		<div class="topBar">
+		<div class="topBar container-fluid">
+			<span class="title col-xs-2 col-xs-offset-5">Activity</span>
 			<img src="img/button/sound.png" ng-show="soundON" ng-click="playAudio(false); soundON = false"/>
 			<img src="img/button/sound_mute.png" ng-show="!soundON" ng-click="playAudio(true); soundON = true"/>
 		</div>
+
+		<div class="wrapper fadeInDown">
+			<div id="formContent">
+				<div class="fadeIn first">
+      				<img src="img/love-and-joy.jpg" class="logo" id="icon" alt="User Icon" />
+    			</div>
+				<form>
+					<input type="text" id="login" class="fadeIn first" name="login" placeholder="login ID">
+					<input type="text" id="password" class="fadeIn second" name="password" placeholder="Password">
+					<input type="button" id ="submit" class="fadeIn third" value="Log In" ng-click="validate()">
+				</form>
+			</div>
+		</div>
 			
-	<!--	<a href="flashCard.html"><button class="homePageBtn">Flash Cards</button></a>-->
 		
-		<a href="revision.html"><button class="homePageBtn">Activities</button></a>
-		</br>
+		<!-- <a href="revision.html"><button class="homePageBtn">Activities</button></a> -->
+		<!-- </br>
 		<div>
 			<img src="img/goodland_logo.png" class="logo"/>
-		</div> 
+		</div>  -->
 	</div>
 </body>
 </html>

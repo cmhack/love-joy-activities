@@ -405,7 +405,7 @@ app.controller('RevisionSlidesCtrl', function($scope, $timeout){
 			$scope.language = "Chinese";
 			
 			$.ajax({
-				url: "idioms.json",
+				url: "Idioms.json",
 				beforeSend: function(xhr){xhr.overrideMimeType("application/json");},
 				dataType: "json",
 				success: function(data){
@@ -439,7 +439,7 @@ app.controller('RevisionSlidesCtrl', function($scope, $timeout){
 			$scope.language = "Chinese";
 			
 			$.ajax({
-				url: "idioms.json",
+				url: "Idioms.json",
 				beforeSend: function(xhr){xhr.overrideMimeType("application/json");},
 				dataType: "json",
 				success: function(data){

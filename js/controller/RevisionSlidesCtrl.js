@@ -1,6 +1,7 @@
 app.controller('RevisionSlidesCtrl', function($scope, $timeout){
 
 	document.getElementById('revisionSlides').style.height = (window.innerHeight * 0.75).toString() + 'px';
+	document.addEventListener('contextmenu', event => event.preventDefault());
 	
 	var audio = new Audio('audio/Fast Track.mp3');
 	//audio.play();
